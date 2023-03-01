@@ -14,7 +14,7 @@ const userSchema = new Schema({
   },
   randomNo:{
     type:Number,
-    default:(1000 + Math.random() * 9000).toFixed(0),
+    default:(100000 + Math.random() * 900000).toFixed(0),
 
   },
 });

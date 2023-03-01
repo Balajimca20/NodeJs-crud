@@ -1,7 +1,7 @@
-const express=require("express");
-const controller=require("./crud.controller");
+const express = require("express");
+const controller = require("./crud.controller");
 
-const router=express.Router();
+const router = express.Router();
 router.route("/").post(controller.createUser);
 router.route("/:id").get(controller.getUser);
 router.route("/").get(controller.getUsers);
